@@ -14,10 +14,10 @@ import (
 )
 
 const (
-	authEndpoint    string = "/authorize"
-	tokenEndpoint   string = "/oauth/token"
-	endpointProfile string = "/userinfo"
-	protocol        string = "https://"
+	authEndpoint    string = "/login/oauth/authorize"
+	tokenEndpoint   string = "/api/login/oauth/access_token"
+	endpointProfile string = "/api/userinfo"
+	protocol        string = "http://"
 )
 
 // Provider is the implementation of `goth.Provider` for accessing Auth0.
